@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    padding: 0% 4%;
+   
+}
+.title{
+    color: white;
+    text-align: center;
+    margin: 5% 0%;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+.subject{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 7%;
+}
+.grade_list{
+    color: white;
+    font-size: 2em;
+}
+.video_container{
+    width: 100%;
+    display: flex;
+}
+
+.recommended_video{
+    width: 30%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.demo{
+    width: 100%;
+    text-align: center;
+    margin: 5% 0%;
+}
+button{
+    border: 1px white solid;
+    padding: 1.5% 4%;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
