@@ -1,47 +1,55 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+ 
+    
 }
 
 body{
     background-color: black;
 }
 
-main{
-    padding: 0% 4%;
-   
-}
-section{
-    height: 100vh;
-}
 .title{
-    color: white;
-    text-align: center;
-    margin: 5% 0%;
-    font-size: 3.5em;
+    color: #ffff;
+    font-size: 2em;
     font-weight: 700;
+    text-align: center;
+    margin: 10% 0%;
 }
+
 .subject{
     color: white;
+    margin: 5% 0%;
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 7%;
+    font-weight: bolder;
 }
-.grade_list{
+
+.grade_list li{
     color: white;
-    font-size: 2em;
+    margin-top: 10%;
+    text-decoration: dotted underline;
 }
 .video_container{
     width: 100%;
-    display: flex;
 }
-
+.main-container{
+    width:100%;
+    text-align: center;
+}
+.main{
+    width: 90%;
+    height: 30vh;
+}
 .recommended_video{
-    width: 30%;
-    margin-left: 10%;
+    margin-top: 10%;
     display: flex;
-    flex-direction: column;
-    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.recommended{
+    width: 45%;
 }
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -50,7 +58,8 @@ a, a:hover, a:focus, a:active {
 .demo{
     width: 100%;
     text-align: center;
-    margin: 5% 0%;
+    margin: 10% 0%;
+    margin-bottom: 20%;
 }
 button{
     border: 1px white solid;
@@ -58,7 +67,80 @@ button{
     background-color: black;
     color: white;
 }
-button:hover{
+button:hover, button:focus{
     background-color: white;
     color: black;
+}
+
+
+/* EXCEPT MOBILE */
+@media(min-width:768px)
+{
+    main{
+        padding: 0% 4%;
+       
+    }
+    section{
+        height: 100vh;
+    }
+    .title{
+        color: white;
+        text-align: center;
+        margin: 5% 0%;
+        font-size: 4em;
+        font-weight: 700;
+    }
+    .subject{
+        color: white;
+        text-align: center;
+        font-size: 3.5em;
+        margin-bottom: 7%;
+    }
+    .grade_list li{ 
+        color: white;
+        text-decoration: none;
+        margin-top: 5%;
+        font-size: 2em;
+    }
+    .video_container{
+        width: 100%;
+        display: flex;
+    }
+   
+    .main{
+        width: 800px;
+        height: 500px;
+    }
+    .recommended_video{
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .recommended{
+        width: 300px;
+        height: 150px;
+    }
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    .demo{
+        width: 100%;
+        text-align: center;
+        margin: 5% 0%;
+    }
+    button{
+        border: 1px white solid;
+        padding: 1.5% 4%;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+    
 }
