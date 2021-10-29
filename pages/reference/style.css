@@ -11,6 +11,9 @@ main{
     padding: 0% 4%;
    
 }
+section{
+    height: 100vh;
+}
 .title{
     color: white;
     text-align: center;
